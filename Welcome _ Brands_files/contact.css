@@ -1,0 +1,256 @@
+/* ------------------------------contact us------------------------- */
+
+#contactUs {
+  height: 100vh;
+  background: linear-gradient(to bottom, #fff, #dff1e9 85%, #fff);
+  display: flex;
+  justify-content: center;
+  margin: 5vh 0vh;
+}
+#contactUsBack {
+  width: 60%;
+  height: 100%;
+  background-color: rgb(5, 31, 5);
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.562);
+  min-height: 550px;
+  max-height: 650px;
+  border-radius: 20px;
+}
+#contactUsFormCont {
+  background-color: white;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.247);
+  width: 118%;
+  height: 87%;
+  margin: 3% 0 0 -9.5%;
+  padding: 0% 12% 1% 13%;
+  border-radius: 25px;
+}
+#contactUsForm > div:nth-of-type(1) > h2 {
+  font-size: 45px;
+  color: rgba(0, 0, 0, 0.664);
+  margin: 0;
+  padding: 4% 0 1% 0;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.InpHolder {
+  position: relative;
+  margin: 37px 0 0px 0;
+}
+.InpHolder > input,
+.InpHolder > textarea {
+  width: 50%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #e5e6ec;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.555);
+  padding: 2px 15px;
+}
+.InpHolder > input:focus,
+.InpHolder > textarea:focus {
+  border: 1px solid #14b1686c !important;
+  background: linear-gradient(90deg, #fff, #dff1e981);
+  border-radius: 7px;
+}
+.InpHolder > label {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  margin: 0;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.775);
+  transition: color 0.3s ease-in-out;
+}
+#contactUsBName:focus ~ #contactUsBNameL {
+  color: rgb(79, 167, 79);
+}
+#contactUsName:focus ~ #contactUsNameL {
+  color: rgb(79, 167, 79);
+}
+#contactUsNum:focus ~ #contactUsNumL {
+  color: rgb(79, 167, 79);
+}
+#contactUsEmail:focus ~ #contactUsEmailL {
+  color: rgb(79, 167, 79);
+}
+#contactUsId:focus ~ #contactUsIdL {
+  color: rgb(79, 167, 79);
+}
+#contactUsMsg:focus ~ #contactUsMsgL {
+  color: rgb(79, 167, 79);
+}
+
+#contactUsBtn {
+  position: absolute;
+  bottom: -30px;
+  right: -4%;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #222;
+  text-transform: uppercase;
+  text-align: center;
+  background: #1adb80;
+  box-shadow: 8px 10px 10px rgb(0 0 0 / 10%);
+  border: 1px solid #16b96d;
+  padding: 15px 20px 13px 20px;
+  user-select: none;
+}
+#contactUsBtn:active {
+  transform: translateY(5%);
+}
+#contactUsImgCont {
+  position: absolute;
+  top: 20%;
+  right: -17%;
+  width: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.33);
+  border-radius: 20px;
+}
+#contactUsImgCont > img {
+  width: 100%;
+  border-radius: 20px;
+}
+.acknHolder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* width: 50%; */
+  float: left;
+  margin: 20px 0 0 0;
+}
+.acknHolder > input {
+  width: max-content;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+.acknHolder > p {
+  padding: unset;
+  margin: unset;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+@media (min-height: 800px) {
+  #contactUs {
+    height: 75vh;
+  }
+}
+@media (min-height: 1000px) {
+  #contactUs {
+    height: 67vh;
+  }
+}
+@media (min-height: 1200px) {
+  #contactUs {
+    height: 60vh;
+  }
+}
+@media (min-height: 1300px) {
+  #contactUs {
+    height: 55vh;
+  }
+}
+@media (max-width: 900px) {
+  .InpHolder > input,
+  .InpHolder > textarea,
+  .acknHolder {
+    /* width: 60%; */
+  }
+}
+@media (max-width: 770px) {
+  #contactUsBack {
+    width: 70%;
+    max-width: 500px;
+    height: 88%;
+  }
+  #contactUsFormCont {
+    width: 124%;
+    height: 90%;
+    margin: 5% 0 0 -12%;
+  }
+  #contactUsForm > div:nth-of-type(1) > h2 {
+    font-size: 42px;
+    padding: 5.5% 0 0% 0;
+  }
+  .InpHolder,
+  .acknHolder {
+    margin: 34px 0 1% 0;
+  }
+
+  .acknHolder > input {
+    width: max-content;
+  }
+  .acknHolder > p {
+    font-size: 10px;
+  }
+  .InpHolder > input,
+  .InpHolder > textarea {
+    font-size: 1rem;
+  }
+  #contactUsBtn {
+    bottom: -25px;
+    right: -7%;
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 550px) {
+  #contactUsImgCont {
+    display: none;
+  }
+  .InpHolder > input,
+  .InpHolder > textarea {
+    width: 90%;
+  }
+  .acknHolder {
+    /* width: 90%; */
+  }
+  .acknHolder > input {
+    width: max-content;
+  }
+}
+@media (max-width: 440px) {
+  #contactUsForm > div:nth-of-type(1) > h2 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 8% 0 1% 0;
+  }
+  .InpHolder > input,
+  .InpHolder > textarea {
+    width: 90%;
+  }
+  .acknHolder {
+    /* width: 90%; */
+  }
+  .acknHolder > input {
+    width: max-content;
+  }
+  .acknHolder > p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 350px) {
+  #contactUsForm > div:nth-of-type(1) > h2 {
+    font-size: 30px;
+    padding: 10% 0 1% 0;
+  }
+  .InpHolder > input,
+  .InpHolder > textarea,
+  .acknHolder {
+    /* width: 100%; */
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 310px) {
+  #contactUsForm > div:nth-of-type(1) > h2 {
+    letter-spacing: 0;
+  }
+  #contactUsBtn {
+    bottom: -25px;
+    right: -7%;
+    padding: 7px 10px;
+  }
+}

@@ -1,0 +1,296 @@
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0vh auto;
+    padding: 50px;
+    background: linear-gradient(to bottom, #fff, #dff1e9);
+  }
+  #right-part {
+    width: 20%;
+    box-sizing: border-box;
+  }
+  #right-part > div {
+    position: absolute;
+    width: 29%;
+    padding: 1rem;
+    margin-top: 1.5rem;
+  }
+  #right-part > div > h3 {
+    color: #1adb80;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+  }
+  
+  #right-part > div > h1 {
+    display: inline-block;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.768);
+    font-size: 3rem;
+  }
+  
+  #left-part {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1%;
+  }
+  #l-main {
+    background-color: rgba(245, 250, 249, 0.575);
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3%;
+    padding: 1% 3%;
+  }
+  #l-main > div > p {
+    padding: 5% 10% 3% 12%;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.61);
+  }
+  #cardcont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .card1 {
+    width: calc(25% - (5px + 4%));
+    margin: 0 5px;
+    padding: 3%;
+    border-radius: 2.5rem;
+    margin-bottom: -50px;
+    cursor: default;
+    transition: background 0.2s ease-in-out;
+    min-height: 235px;
+  }
+  .card1 > div > i {
+    color: #1adb80;
+    font-size: 3vmax;
+  }
+  .card1 > div > h5 {
+    font-size: 16px;
+    margin-top: 15px;
+  }
+  .tex {
+    max-width: 100%;
+    font-size: 0.9rem;
+    opacity: 0;
+    color: rgba(0, 0, 0, 0.446);
+    transition: opacity 0.2s ease-in-out;
+  }
+  .card1:hover .tex {
+    opacity: 1;
+  }
+  .card1:hover {
+    background-color: white;
+    box-shadow: 0 4px 15px 5px rgba(128, 128, 128, 0.227);
+  }
+  .auExtraInfo > p:nth-of-type(2) {
+    font-size: 13px;
+    font-weight: 300;
+  }
+  @media (max-width: 1300px) {
+    .card1 > div > h5 {
+      padding-left: 7%;
+      font-size: 13px;
+    }
+  }
+  @media (max-width: 1200px) {
+    #l-main > div > p {
+      padding: 5% 7% 3% 15%;
+    }
+    #cardcont {
+      width: 94%;
+    }
+  }
+  
+  @media (max-width: 1180px) {
+    #right-part > div {
+      width: 32%;
+    }
+    #right-part > div > h3 {
+      font-size: 1.3rem;
+    }
+  
+    #right-part > div > h1 {
+      font-size: 2.6rem;
+    }
+    #l-main > div > p {
+      padding: 5% 2% 3% 20%;
+    }
+    #cardcont {
+      width: 95%;
+    }
+    .card1 {
+      padding: 2%;
+    }
+    .card1 > div > i {
+      font-size: 3vmax;
+    }
+  }
+  @media (max-width: 1040px) {
+    .card1 {
+      padding: 2%;
+    }
+    .card1 > div {
+      text-align: center;
+    }
+    .card1 > div > h5 {
+      font-size: 10px;
+      padding-left: 7%;
+    }
+  }
+  @media (max-width: 990px) {
+    #services {
+      padding-bottom: 70px;
+    }
+    #right-part > div > h1 {
+      font-size: 2.4rem;
+    }
+    .card1 {
+      width: calc(50% - (5px + 4%));
+      margin-top: 60px;
+      padding-left: 20px;
+      min-height: unset;
+    }
+    #cardcont {
+      width: 80%;
+    }
+    .card1 {
+      padding: 3%;
+    }
+    .card1 > div {
+      text-align: unset;
+    }
+    .card1 > div > i {
+      font-size: 4vmax;
+      padding-left: 5%;
+    }
+    .card1 > div > h5 {
+      font-size: 14px;
+      padding-left: 7%;
+    }
+  }
+  
+  @media (max-width: 850px) {
+    #cardcont {
+      width: 90%;
+    }
+    #right-part > div {
+      margin-left: -20px;
+      width: 35%;
+    }
+    .card1 {
+      min-height: 200px;
+      background-color: white;
+      box-shadow: 0 4px 15px 5px rgba(128, 128, 128, 0.227);
+    }
+    .tex {
+      opacity: 1;
+    }
+  }
+  
+  @media (max-width: 750px) {
+    #services {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      padding: 10px;
+    }
+    #right-part {
+      width: 90%;
+      padding: 0;
+      margin: 0;
+    }
+    #right-part > div {
+      position: static;
+      width: 95%;
+      margin: 0 auto;
+      padding: 0;
+    }
+    #right-part > div > h3 {
+      width: 90%;
+      margin: 0 auto;
+      text-align: start;
+    }
+    #right-part > div > h1 {
+      width: 90%;
+      margin: 0 auto;
+      padding-left: 5%;
+    }
+    #left-part {
+      width: 98%;
+      margin: 0 auto;
+    }
+    #l-main {
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+    }
+    #l-main > div > p {
+      margin: 0;
+      padding: 2% 5% 0 5%;
+    }
+    #cardcont {
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 630px) {
+    #right-part > div > h1 {
+      font-size: 2.2rem;
+    }
+    .card1 > div > h5 {
+      font-size: 13px;
+      padding-right: 7%;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #right-part > div > h1 {
+      font-size: 2rem;
+    }
+    .card1 > div > h5 {
+      margin: 0.5rem 0;
+      font-size: 12px;
+      padding-left: 7%;
+    }
+    .card1 {
+      min-height: 150px;
+      padding: 5% 0 5% 3%;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    .card1 > div > h5 {
+      font-size: 11px;
+    }
+  }
+  @media (max-width: 440px) {
+    #services {
+      padding: 50px;
+      padding-bottom: 50px;
+    }
+    #l-main > div > p {
+      font-size: 13px;
+      font-weight: 300;
+    }
+    #cardcont {
+      flex-direction: column;
+      flex-wrap: nowrap;
+      margin-top: 5%;
+    }
+    .card1 {
+      width: calc(100% - (5px + 4%));
+      margin: 0;
+      margin-top: 10px;
+      min-height: unset;
+    }
+    .card1 > div > h5 {
+      font-size: 14px;
+      padding-left: 7%;
+    }
+  }

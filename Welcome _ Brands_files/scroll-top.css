@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+/* * {
+  font-family: "Nunito Sans", sans-serif;
+} */
+html {
+  scroll-behavior: smooth !important;
+}
+section {
+  padding: 0 !important;
+}
+#scTop {
+  position: fixed;
+  top: 92.5%;
+  left: 94%;
+  z-index: 10;
+  font-size: 3rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 0 5px #1adb80;
+  animation-name: Sctop;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+}
+@keyframes Sctop {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1) translateY(5px);
+  }
+  100% {
+    transform: scale(1) translateY(0);
+  }
+}
+/* -------------------------------------------------------------------------- */
+
+#headerC {
+  transition: all 300ms ease-in-out;
+}
+.starsMov {
+  position: absolute;
+  top: 110%;
+  right: -66%;
+  margin: unset;
+  padding: unset;
+  width: 60%;
+  color: white;
+  background: linear-gradient(to right, #fff 3%, #e1f2ea);
+  overflow: hidden;
+  transition: all 300ms ease-in-out;
+  z-index: 500;
+  display: none;
+  height: 100vh;
+}
+.starsMov > div:nth-of-type(1),
+.starsMov > div:nth-of-type(2),
+.starsMov > div:nth-of-type(3) {
+  filter: invert(90%) sepia(70%) contrast(90%) !important;
+  margin: unset;
+  padding: unset;
+}
+#navDiv > ul {
+  padding: unset;
+  margin: unset;
+}
+.hamNavItem {
+  padding: 5% 9%;
+  color: #030c5f;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  cursor: pointer;
+  user-select: none;
+}
+.hamNavItemName {
+  margin-left: 5%;
+}
+.fa-phone {
+  transform: rotateY(180deg);
+}
+.hamNavItem:active {
+  transform: translateY(3px);
+}
+#togglers {
+  color: #fff !important;
+  font-size: 25px;
+  transition: all 1s ease-in-out;
+  display: none;
+}
+.slideStyleIn {
+  right: -4% !important;
+}
+.slideStyleOut {
+  right: -90%;
+}
+#crossNavToggler {
+  display: none;
+  color: #fff !important;
+  font-size: 25px;
+  transition: all 1s ease-in-out;
+}
+.blackFooter {
+  padding-top: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footerListContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footerListItems {
+  margin: unset !important;
+}
+.giveSpace {
+  margin: 5% 0;
+}
+@media (max-width: 1024px) {
+  #scTop {
+    top: 90%;
+    left: 95%;
+  }
+}
+@media (max-width: 963px) {
+  .brandGridHeading > h2 {
+    font-size: 25px;
+  }
+  .brandGridHeading {
+    width: 81%;
+  }
+}
+@media (max-width: 874px) {
+  #scTop {
+    top: 89%;
+    left: 92%;
+  }
+}
+@media (max-width: 992px) {
+  #togglers {
+    display: block;
+  }
+  .slideStyleIn {
+    right: -15% !important;
+  }
+  .starsMov {
+    display: block;
+  }
+  .reverseDirection {
+    flex-direction: column-reverse;
+  }
+  .giveSpace {
+    margin: 20% auto;
+  }
+  .giveInternalSpace {
+    margin-bottom: 15%;
+  }
+  .setTextLeft {
+    text-align: left !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .brandGridMain {
+    width: 90%;
+  }
+  .brandGridHeading {
+    margin-top: 1%;
+    width: 87%;
+  }
+  #scTop {
+    left: 87%;
+  }
+  .slideStyleIn {
+    right: -5% !important;
+  }
+}
+@media (max-width: 500px) {
+  .brandGridHeading {
+    width: 80%;
+  }
+  .brandGridHeading > h2 {
+    margin: unset;
+    margin: 2% 0%;
+    font-size: 21px;
+  }
+}
+@media (max-width: 400px) {
+  #scTop {
+    font-size: 1.5rem;
+    left: 88%;
+  }
+  .hamNavItemName {
+    margin-left: 5%;
+    margin-top: 3%;
+    font-size: 12px;
+  }
+  .hamNavItemIcon > i {
+    font-size: 12px !important;
+  }
+}
+/* ---------------------------------------------------------------------------- */
